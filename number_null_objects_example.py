@@ -9,10 +9,4 @@ def product(x, y):
 
 
 def sum(x, y):
-    if x is None and y is None:
-        return 0
-    elif x is None:
-        return y
-    elif y is None:
-        return x
-    return x + y
+    return (x or 0) + (y or 0)
